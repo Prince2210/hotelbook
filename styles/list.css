@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
    width: 100%;
+   margin: 0%;
 }
 #logo{
     height: 60px;
@@ -13,4 +14,19 @@ body, html {
 .listimg{
     height: 200px;
     width: 250px;
+    background-color:rgb(132,136,139) ;
+}
+#body{
+    background-color: #e0e0e0;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}
+.red{
+    background-color: rgb(132,136,139);
+    width: 40%;
+    margin: 2%;
 }

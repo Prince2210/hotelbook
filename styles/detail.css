@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
    width: 100%;
+   margin: 0%;
 }
 #logo{
     height: 60px;
@@ -13,4 +14,19 @@ body, html {
 .rad{
     width: 500px;
     height: 500px;
+    margin: 2% 4% 0% 4%;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}
+#body{
+    background-color: #e0e0e0;
+}
+#FM{
+    margin: 0% 4% 1% 4%;
+}#desc{
+    margin: 1% 4% 0% 4%;
 }
