@@ -6,6 +6,7 @@ body, html {
 #logo{
     height: 60px;
     width: 60px;
+    margin-top: 5px;
 }
 .simg{
     height: 20px;
@@ -18,12 +19,41 @@ body, html {
 }
 header{
     background-color: rosybrown;
-}
+  position: sticky;
+  top: 0;}
+
 footer{
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif; 
     background-color: rosybrown;
+    position: sticky;
+    bottom: 0;
+   }
+   #login{
+    display: inline;
+    float: right;
+    font-family: 'Ubuntu', sans-serif;   
+   text-align: center;
+   padding: 23px 16px;
 }
 #body{
     background-color: #e0e0e0;
+    font-family:'Ubuntu', sans-serif; 
+}
+#social{
+    display: inline;
+    margin: 0%;
+    position: relative;
+    top: 30%;
+    float: right;
+    padding-right: 15px;    
+}
+#contact{
+    display: inline;
+    margin-top: 0%;
+    position: relative;
+  top: 30%;
+    padding-left: 15px;
 }
 #FM{
     margin: 0% 4% 1% 4%;

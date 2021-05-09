@@ -6,6 +6,7 @@ body, html {
 #logo{
     height: 60px;
     width: 60px;
+    margin-top: 5px;
 }
 #body{
     background-color: #e0e0e0;
@@ -18,24 +19,73 @@ body, html {
 }
 .simg{
     height: 20px;
-    width: 20px;
+    width: 22px;
 }
 header{
     background-color: rosybrown;
+  position: sticky;
+  top: 0;
 }
 footer{
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif; 
     background-color: rosybrown;
+    position: sticky;
+    bottom: 0;
+   
 }
 #form1{
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
     height: 380px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover;  
 }
 #front{
     margin-left: 13.5%;
 }
 #last{
     margin-right: 13.5%;
+}
+#login{
+    display: inline;
+    float: right;
+    font-family: 'Ubuntu', sans-serif;   
+   text-align: center;
+   padding: 23px 16px;
+}
+#contact{
+    display: inline;
+    margin-top: 0%;
+    position: relative;
+  top: 30%;
+    padding-left: 15px;
+}
+#social{
+    display: inline;
+    margin: 0%;
+    position: relative;
+    top: 30%;
+    float: right;
+    padding-right: 15px;    
+}
+.box{
+    position: relative;
+    top:165px ; 
+   margin-left: 36%;
+}
+input[type=text]{
+    border: 10px transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius:15px ;
+    width: 44%;
+}
+#view{
+    text-align: center;
+ display: block;  
+ position: relative;
+ background-color: #e0e0e0;
+ font-family: 'Ubuntu', sans-serif; 
+ padding-bottom: 50px;
 }

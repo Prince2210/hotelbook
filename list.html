@@ -3,45 +3,52 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="G:\Hotel_Booking_Website_Starter_Code\styles\list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>List</title>
 </head>
 <body>
      <header>
-        <a href="G:\Hotel_Booking_Website_Starter_Code\index.html"><img id="logo" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="200" height="150" alt="logo"/></a>
-         <a href="G:\Hotel_Booking_Website_Starter_Code\login.html">Login</a>
+        <img id="logo" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="200" height="150" alt="logo"/>
+         <div id="login" ><a style="text-decoration: none;color: black;" href="G:\Hotel_Booking_Website_Starter_Code\login.html">Login</a>
+        </div>
     </header>
+
     <div id="body">
-        <ul style="margin-top: 0%;"><br>
-            <li><a href="#rad">List View</a></li>
-            <li><a href="#map">Map View</a></li>
+        <ul style="margin-top: 0%; list-style-type: none;"><br>
+            <li><a style="text-decoration: none; color: #000;" href="#rad"><strong>List View</strong></a></li>
+            <li><a style="text-decoration: none; color: #000;" href="#map"><strong>Map View</strong></a></li>
         </ul>
-        <div class="red">
-            <a href="G:\Hotel_Booking_Website_Starter_Code\detail.html">
-        <img id="rad" class="listimg" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel"/>
+     <div id="parent">
+         <div class="red" style="position: absolute;left: 0%;" >
+            <a style="text-decoration: none;color: #000;"  href="G:\Hotel_Booking_Website_Starter_Code\detail.html">
+        <img id="rad" class="listimg"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel"/>
         <h3>Radisson Blu Hotel</h3>
         <p>5 Star</p>
         <p>New Delhi</p></a>
     </div>
-        <div class="red">
+        <div class="red" >
         <img class="listimg" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi"/>
         <h3>The Lalit New Delhi</h3>
         <p>4.5 Star</p>
-        <p>New Delhi</p></div>
-       <div class="red">
+        <p>New Delhi</p>
+        </div>
+       <div class="red" >
            <img class="listimg" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace"/>
         <h3>Taj Palace</h3>
         <p>4 Star</p>
         <p>New Delhi</p>
+        </div>
+        <img id="map" style="display:none;" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map"/>
+        <p style="margin-bottom: 0%; display: none;">Map View</p><br>
     </div>
-        <img id="map" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map"/>
-        <p style="margin-bottom: 0%;">Map View</p><br>
     </div>
      <footer>
-        <a href="G:\Hotel_Booking_Website_Starter_Code\contact.html" >Contact Us</a><br>
-         <a href="https://www.facebook.com" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png" alt="fb" width="22" height="20"/></a>
+        <div id="contact"><a style= "text-decoration:none;color: black;" href="G:\Hotel_Booking_Website_Starter_Code\contact.html" >Contact Us</a></div>
+         <div id="social" ><a href="https://www.facebook.com" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png" alt="fb" width="22" height="20"/></a>
          <a href="https://www.instagram.com/" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png" alt="insta" width="22" height="20"/></a>
          <a href="https://twitter.com/?lang=en" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png" alt="twitter" width="22" height="20"/></a>
-         <p>2021 ROOM SERACH PVT. LTD.</p>
+        </div>
+         <p style="text-align: center;padding: 0%;"  >2021 ROOM SERACH PVT. LTD.</p>
      </footer>
     </div>
 </body>
