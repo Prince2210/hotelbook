@@ -1,52 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="G:\Hotel_Booking_Website_Starter_Code\styles\detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Detail</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            background-color: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #full {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .hotelImage {
+            height: 400px;
+            width: 500px;
+            margin: 2% 4% 0% 4%;
+        }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+        }
+
+        .socialLogo {
+            height: 20px;
+            width: 22px;
+            
+        }
+
+        header {
+            background-color: rosybrown;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:10%;
+                display: flex;
+                justify-content: space-between;
+
+
+                }
+
+        
+
+        footer {
+            background-color: rosybrown;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+            height: auto;
+            top: auto;
+            display: flex;
+                left:0;
+                justify-content:space-between;
+                vertical-align: middle;
+                padding:1%;
+        }
+
+        .formStyle {
+            margin-right: 4%;
+            margin-left: 4%;
+            margin-bottom: 1%;
+        }
+
+        #detailStyle {
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 1%;
+            margin-bottom: 2%;
+
+        }
+
+        .login {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #linkSty{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+        }
+        .mainBox {
+                width:100%;
+                margin:0;
+                padding: 2%;
+                height:50%;
+                box-sizing: border-box;
+                display: flex;
+            }
+            .sideBox1 {
+                width: 60%;
+		 	    height: auto;
+                border: 2px solid black;
+                float:right;
+                display: flex;
+                justify-content: center;
+            }
+            .sideBox2 {
+                width: 40%;
+		 	    height: 100%;
+                float:left;
+                overflow: hidden;
+                border: 2px solid black;
+            }
+            .labelStyle {
+                margin: 2%;
+                height:max-content;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2%;
+            }
+            .submitstyle {
+                padding: 1% 2%;
+                margin-left: 45%;
+                margin-top: 2%;
+                margin-bottom: 2%;  
+            }
+
+            .length {
+                width: 60%;
+            }
+    </style>
 </head>
+
 <body>
-    <div>
-     <header>
-        <img id="logo" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="200" height="150" alt="logo"/>
-        <div id="login" ><a style="text-decoration: none;color: black;" href="G:\Hotel_Booking_Website_Starter_Code\login.html">Login</a></div>
-    </header>
-    <div id="body">
-        <img class="rad" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel"/><br>
-        <div id="FM"><form action="G:\Hotel_Booking_Website_Starter_Code\payment.html" >
-            <label for="person">Adults:</label>
-            <input type="number" name="person" min="1" required><br>
-            <label for="name">Name:</label>
-            <input type="text" name="name"><br>
-            <label for="from">From Date:</label>
-            <input type="date" name="from" required><br>
-            <label for="to">To Date:</label>
-            <input type="date" name="to"><br>
-            <label for="total">Total</label>
-            <input type="Number" name="total" disabled><br>
-            <input type="Submit" value="Book Now">
-        </form></div>
-       <div id="desc"><h2>Radisson Blu Hotel</h2>
-        <p>RATING</p>
-        <P>AMENITIES</P>
-        <ul>
-            <li>Room Service</li>
-            <li>Resturant</li>
-            <li>Business Centre</li>
-            <li>Fitness centre</li>
-            <li>Pool</li>
-        </ul>
-        <p>DESCRIPTION</p>
-        <p>Radisson Blu is an international chain of hotels operated by Radisson Hotels. With roots dating back to the 1960s, the Radisson Blu brand name came into existence in 2009 with a rebranding from Radisson SAS. Its hotels are found in major cities, key airport gateways and leisure destinations.</p><br></div>
-    </div>
-     <footer>
-        <div id="contact"><a style= "text-decoration:none;color: black;" href="G:\Hotel_Booking_Website_Starter_Code\contact.html" >Contact Us</a></div>
-        <div id="social" ><a href="https://www.facebook.com" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png" alt="fb" width="22" height="20"/></a>
-        <a href="https://www.instagram.com/" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png" alt="insta" width="22" height="20"/></a>
-        <a href="https://twitter.com/?lang=en" target="_blank"><img class="simg" src="G:\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png" alt="twitter" width="22" height="20"/></a></div>
-        <p style="text-align: center;padding: 0%;"  >2021 ROOM SERACH PVT. LTD.</p>
-     </footer>
+    <div id="full">
+        <header>
+            <a href="index.html"><img src="assests\images\logo.png" class="logo" alt="logo"></a>
+            <a href="login.html" target="_blank" class="login">Login</a>
+        </header>
+        <div>
+            <div class="mainBox">
+                <div class="sideBox1">
+                    <img class="hotelImage"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                </div>
+                <div class="sideBox2">
+                    <form action="payment.html" class="formStyle">
+
+                        <div class="labelStyle">
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="adults" name="number" min="1" required class="length">
+                        </div><br>
+
+                        <div class="labelStyle">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required class="length">
+                        </div><br>
+
+                        <div class="labelStyle">
+                            <label for="from">From Date:</label>
+                            <input type="date" id="from" name="from" required class="length">
+                        </div><br>
+                        <div class="labelStyle">
+                            <label for="toDate">To Date:</label>
+                            <input type="date" id="toDate" name="toDate" required class="length">
+                        </div><br>
+
+                        <div class="labelStyle">
+                            <label for="total">Total</label>
+                            <input type="text" id="total" name="total" readonly="readonly" class="length">
+                        </div><br>
+
+                        <input type="submit" value="Book Now" class="submitstyle">
+
+
+                    </form>
+                </div>
+            </div>
+            <div id="detailStyle">
+                <h2>Radisson Blu Hotel</h2>
+                <p>RATING</p>
+                <p>5 Star</p>
+                <p>AMENITIES</p>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <div>
+                    <h5>DESCRIPITION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa beatae doloremque
+                        temporibus
+                        perspiciatis delectus earum, odit dolorum quaerat deleniti velit ratione laboriosam illum eius
+                        ab at
+                        aliquam, qui nihil?</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span><a href="contact.html" target="_blank" id="linkSty">Contact Us</a></span>
+            <span> © 2020 ROOM SEARCH PVT. LTD</span>
+            <span style="margin-right: 30px;"><a href="https://www.facebook.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/facebook.png" alt="facebooklogo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/instagram.png" alt="instagramlogo"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="socialLogo"
+                        src="assests/images/twitter.png" alt="twitterlogo"></a>
+            </span>
+        </footer>
     </div>
 </body>
+
 </html>
